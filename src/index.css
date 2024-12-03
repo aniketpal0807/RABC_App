@@ -1,60 +1,90 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff8bd;
+  background-image:linear-gradient( to right,rgb(183, 0, 255), rgb(0, 238, 255));
 }
 
+.sep{
+  height: 3px;
+  width: 70%;
+  margin: 40px auto;
+  background-color: whitesmoke;
+}
 .App {
   padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  background: rgb(247, 248, 195);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  background-image:linear-gradient( to right, rgb(0, 238, 255),rgb(183, 0, 255)); 
+  border-radius: 15px;
+  border: 4px solid whitesmoke;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
-  color: #333;
+h1 {
+  color: whitesmoke;
+  width: fit-content;
+  margin: auto;
+  border: 5px solid whitesmoke;
+  padding: 20px;
+  border-radius: 15px;
 }
 
+h2{
+  color: #0424a7;
+  text-decoration: underline;
+}
+
+h3{
+  color: rgb(47, 10, 85);
+}
+
+h4{
+  color: black;
+}
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-
+.action-btn{
+  width: 44px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 th, td {
-  border: 1px solid #ddd;
+  border: 3px solid #ddd;
   padding: 8px;
-  text-align: left;
+  text-align: center;
 }
 
 th {
-  background-color: #007bff;
-  color: white;
+  background-color: #a804d1;
+  color: #222121;
+}
+
+td{
+  color: whitesmoke;
 }
 
 button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  padding: 8px 20px;
+  background-image:linear-gradient( to right, rgb(0, 238, 255),rgb(183, 0, 255));
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-image:linear-gradient( to right,rgb(183, 0, 255),rgb(0, 238, 255))
 }
 
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
 
 .form {
   display: flex;
@@ -62,7 +92,56 @@ button:disabled {
 }
 
 input, select {
-  padding: 5px;
+  color: whitesmoke;
+  font-size: 16px;
+  padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.252);
 }
+
+::-webkit-input-placeholder{
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+input:focus{
+ outline: 1px solid whitesmoke;
+}
+
+select:focus{
+  outline: 1px solid whitesmoke;
+}
+
+.addnewrole{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 20px;
+}
+.permission > label {
+  color: whitesmoke;
+}
+
+.addrole{
+  color: whitesmoke;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+  justify-content: left;
+}
+
+.permission{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.adduser{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
